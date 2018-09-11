@@ -1,17 +1,47 @@
 <!--The content below is only a placeholder and can be replaced.-->
+
 <div style="text-align:center">
   <h1>
-     {{ title }}
+     {{ title }}&trade;
   </h1>
+  <!--
   <button type="button" (click)= "changeTitle()">
     change de titre!!
   </button>
+  -->
+  <!--Integration des composant todo-form-->
+  
 </div>
+
+<todo-form></todo-form>
+<app-view-todos></app-view-todos> 
+
+<!--
+
 <div>
-  <input type="text" placeholder="A faire...">
-  <button type ="button">ajouter</button>
+  <table [hidden]="todos.length==0">
+    <thead>
+      <tr>
+        <th>Titre</th>        
+      </tr>
+    </thead>
+    <input type="checkbox" (click)=checkUncheckall() [checked]="checkedStatus">Selectionner tout
+    <tbody>
+      <tr *ngFor="let todo of todos; let i = index">
+        <td>
+          <input type="checkbox"  (click)="toggle(i)" [checked]="todo.isChecked">
+        </td>
+        <td [ngClass]="{strikeOut: isChecked(todo)}">{{todo.title}}</td>
+        <td>
+          <button type="button" (click)="delete(i)">X</button>
+        </td>
+      </tr>
+    <tr>
+      <button type ="button" [disabled]="hasNoneChecked()" (click)= deleteMultipleTwo()>Suppression Multiple</button>
+    </tr>
+    
+
+    </tbody>
+  </table>
 </div>
-
-
-
-
+-->

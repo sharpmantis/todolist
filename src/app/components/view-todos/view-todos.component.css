@@ -1,0 +1,72 @@
+div{
+    position:relative;
+    
+    left:50%;
+    
+    width:1000px; /* A toi de donner la bonne largeur */
+   
+    margin-left:-500px; /* -largeur/2 */
+    margin-top:75px; /* -hauteur/2 */
+    background-color: rgb(186, 186, 201);
+    border-radius: 25px;
+    text-align: center;
+    margin-bottom:75px;
+    font-weight: bold;
+    border-style: solid;
+    border-color: rgba(128, 136, 144, 0.966)
+    
+}
+
+
+
+#checkbox{
+    transform: scale(1.4);
+   
+
+}
+
+#content{
+    width:940px;
+    border-style: inset;
+    border-color: rgba(128, 136, 144, 0.966);
+    background-color: rgb(218, 218, 228);
+    border-radius: 5px;
+    padding: 10px;
+
+}
+
+#X{
+
+    margin-left:10px;
+    margin-right:10px;
+    border-radius: 10px;
+    width: 30px;
+    height:30px;
+
+}
+
+#selectall{
+    margin-top:10px;
+    margin-bottom:10px;
+    transform: scale(1.4);
+}
+#textSelectall{
+    text-align: left;
+}
+
+#suppremultiple{
+    margin-top:10px;
+    margin-bottom:10px;
+    margin-left:10px;
+    width: 100px;
+    height:30px;
+    border-radius: 10px;
+}
+
+#textedebut{
+    text-align: center;
+}
+
+#textedebut{
+    textefin: center;
+}
