@@ -1,0 +1,19 @@
+table{
+    position:relative;
+    left:50%;
+    width:600px; /* A toi de donner la bonne largeur */
+    margin-left:-300px; /* -largeur/2 */
+    tbody{
+        background-color: lightblue;
+        td{
+            &.strikeOut{
+                text-decoration: line-through;
+            }
+        }
+    }
+}
+h1{
+    font-family: Brush Script MT;
+    font-size: 6em;
+    color: whitesmoke;
+}

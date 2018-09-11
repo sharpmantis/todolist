@@ -1,0 +1,65 @@
+<form id="todo-form" [formGroup]="todoForm" (submit)="saveTodo()">
+
+  <div class="center">
+
+    <tr>
+
+      <h2>My Todos</h2>
+
+      <input 
+      class="todo" 
+      type="text" 
+      placeholder="Que dois-tu faire petite forme de vie organique?"
+      formControlName="title"
+      required >
+    </tr>
+<!--
+Gestion des erreurs
+-->
+
+
+
+    
+<!--Fin de gestion des erreurs-->
+
+    <div id="dates" class="dates">
+      <tr>
+        <td>
+          <p>Debut tache</p>
+          <input 
+          type="date" 
+          formControlName="debut" >
+        </td>
+        <td>
+          <p>Fin tache</p>
+          <input type="date" 
+          formControlName="fin" >
+        </td>
+      </tr>
+    </div>
+    
+    
+        <tr>
+          <div id="soumettre" class="bouton">
+          <button 
+          type="submit" 
+          [disabled]="todoForm.invalid" 
+          >
+          ajouter</button>
+        </div>
+        </tr>
+      
+  </div>
+<div id="alertedate"
+    class="form-group"
+    *ngIf="todoForm.hasError('debut')">
+    La date de debut doit être inférieure a la date de fin!
+    </div>
+    
+    <div
+    id="alertenom"
+    class="form-group"
+    *ngIf="title.invalid && title.touched">
+    Le titre du todo ne peut pas être vide, Il doit contenir au moins 5 caracteres!
+    </div>
+</form>
