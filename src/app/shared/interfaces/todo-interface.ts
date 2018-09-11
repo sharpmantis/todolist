@@ -13,12 +13,12 @@ export interface TodoInterface {
      * Date de debut
      * @var Date
      */
-    begin: Date;
+    debut: Date;
     /**
      * Date de fin
      * @var Date
      */
-    end: Date;
+    fin: Date;
 
     /**@var (optional) id number
     * Identifiant du todo

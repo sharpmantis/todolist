@@ -61,9 +61,46 @@ export class TodoService {
     ).subscribe((addedTodo)=>{
       addedTodo[0].isChecked=false;
       this.sendTodo(addedTodo[0]);
+      const _emptyTodo={
+        title:'',
+        debut: new Date(),
+        fin:new Date()
+      }
+      this.sendTodo(_emptyTodo);
     });
     
   }
-  
+
+  public deleteTodo(todo: TodoInterface): void{
+     this._api.delete(
+      Constants._API_ROOT+"/"+todo.id
+     )
+     .subscribe((result)=>{
+
+     });
+  }
+  public deleteMultipleTwodo(todo: TodoInterface): void{
+    this._api.delete(
+     Constants._API_ROOT+"/"+todo.isChecked
+    )
+    .subscribe((result)=>{
+      
+    });
+ }
+  public updateTodo(todo: TodoInterface):void{
+    this._api.put<TodoInterface>(
+      Constants._API_ROOT+'/'+todo.id,
+      todo
+    ).subscribe((result) =>{
+      //on n'oublie pas de transmettre le todo modifié
+      const _emptyTodo={
+        title:'',
+        debut: new Date(),
+        fin:new Date()
+      }
+      this.sendTodo(todo);
+      this.sendTodo(_emptyTodo);
+    });
+  }
 
 }

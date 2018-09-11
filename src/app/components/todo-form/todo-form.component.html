@@ -16,21 +16,13 @@
 <!--
 Gestion des erreurs
 -->
-    <div
-    class="alert alert-warning"
-    *ngIf="title.invalid && title.touched">
-    Le titre du todo ne peut pas être vide, Il doit contenir au moins 5 caracteres!
-    </div>
 
-    <div
-    class="form-group"
-    *ngIf="todoForm.hasError('begin')">
-    La date de debut doit être inférieure a la date de fin!
-    </div>
+
+
     
 <!--Fin de gestion des erreurs-->
 
-    <div class="dates">
+    <div id="dates" class="dates">
       <tr>
         <td>
           <p>Debut tache</p>
@@ -46,8 +38,9 @@ Gestion des erreurs
       </tr>
     </div>
     
+    
         <tr>
-          <div class="bouton">
+          <div id="soumettre" class="bouton">
           <button 
           type="submit" 
           [disabled]="todoForm.invalid" 
@@ -57,5 +50,16 @@ Gestion des erreurs
         </tr>
       
   </div>
-
+  <div id="alertedate"
+  class="form-group"
+  *ngIf="todoForm.hasError('debut')">
+  La date de debut doit être inférieure a la date de fin!
+  </div>
+  
+  <div
+  id="alertenom"
+  class="form-group"
+  *ngIf="title.invalid && title.touched">
+  Le titre du todo ne peut pas être vide, Il doit contenir au moins 5 caracteres!
+  </div>
 </form>

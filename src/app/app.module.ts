@@ -10,6 +10,7 @@ import { ViewTodosComponent } from './components/view-todos/view-todos.component
 import { TodoService } from './shared/services/todo.service';
 
 import { HttpClientModule } from '@angular/common/http';
+import { UiModule } from './modules/ui/ui.module';
 
 @NgModule({
   declarations: [
@@ -21,7 +22,8 @@ import { HttpClientModule } from '@angular/common/http';
   imports: [
     BrowserModule,
     ReactiveFormsModule,
-    HttpClientModule
+    HttpClientModule,
+    UiModule
   ],
   providers: [TodoService],
   bootstrap: [AppComponent]
