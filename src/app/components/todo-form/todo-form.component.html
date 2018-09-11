@@ -50,16 +50,16 @@ Gestion des erreurs
         </tr>
       
   </div>
-  <div id="alertedate"
-  class="form-group"
-  *ngIf="todoForm.hasError('debut')">
-  La date de debut doit être inférieure a la date de fin!
-  </div>
-  
-  <div
-  id="alertenom"
-  class="form-group"
-  *ngIf="title.invalid && title.touched">
-  Le titre du todo ne peut pas être vide, Il doit contenir au moins 5 caracteres!
-  </div>
+<div id="alertedate"
+    class="form-group"
+    *ngIf="todoForm.hasError('debut')">
+    La date de debut doit être inférieure a la date de fin!
+    </div>
+    
+    <div
+    id="alertenom"
+    class="form-group"
+    *ngIf="title.invalid && title.touched">
+    Le titre du todo ne peut pas être vide, Il doit contenir au moins 5 caracteres!
+    </div>
 </form>
