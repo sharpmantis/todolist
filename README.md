@@ -6,7 +6,7 @@ pour reinstaller
 $: git clone https://github.com/sharpmantis/CoursAelion
 
 -------install Angular------
-$: cd [tonNomDev]
+$: cd [tonEspaceDeDev]
 $: git clone https://github.com/sharpmantis/CoursAelion
 $: cd [tonProjet]
 $: npm i @angular-cli@latest -g (si jamais angular n'est pas deja installé=
