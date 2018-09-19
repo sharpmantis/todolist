@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 # Hello
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 6.1.5.
@@ -26,7 +25,6 @@ Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protrac
 ## Further help
 
 To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
-=======
 # CoursAelion
 Tout ce que j'ai fait durant ma formation
 
@@ -46,4 +44,3 @@ puis aller sur htt//localhost:42000
 
 
 GO!
->>>>>>> 87e9fcb72488a71cec64b9ab38a2b9ce911052aa
