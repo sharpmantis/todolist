@@ -6,4 +6,5 @@ import{
  MatPaginatorModule,
   MatSortModule,
   MatIconModule,
-  MatButtonModule} from '@angular/material'
+  MatButtonModule,
+} from '@angular/material'
